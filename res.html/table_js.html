@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>JS Table</title>
+    <link rel="stylesheet" href="../MDB/css/bootstrap.css">
+    <link rel="stylesheet" href="../MDB/css/mdb.css">
+</head>
+<body>
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <table class="table-light table-bordered mb-5" width="500px" >
+                    <tr  class="bg-dark text-white">
+                        <th>EId</th>
+                        <th>EName</th>
+                        <th>ESal</th>
+                        <th>EGender</th>
+                    </tr>
+                
+                    <tbody id="myTable">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 m-auto">
+                <button class="btn-md bg-dark text-white ml-2" id="all">SelectAll</button>
+                <button class="btn-md bg-dark text-white ml-2" id="men">Male</button>
+                <button class="btn-md bg-dark text-white ml-2" id="women">Female</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var myArray = [
+            {'eId':'1','eName':"Keshav",'eSal':'15000','eGender':"male"},
+            {'eId':'2','eName':"Chunnu",'eSal':'20000','eGender':"female"},
+            {'eId':'3','eName':"Shalni",'eSal':'35000','eGender':"female"},
+            {'eId':'4','eName':"fahad",'eSal':'30000','eGender':"male"},
+            {'eId':'5','eName':"Deepak",'eSal':'45000','eGender':"male"},
+            {'eId':'6','eName':"Julee",'eSal':'30000','eGender':"female"},
+            {'eId':'7','eName':"Nilu",'eSal':'25000','eGender':"female"},
+            {'eId':'8','eName':"Ram",'eSal':'10000','eGender':"male"},
+            {'eId':'9','eName':"Priti",'eSal':'54000','eGender':"female"},
+            {'eId':'10','eName':"Rishikesh",'eSal':'40000','eGender':"male"},
+        ];
+        buildTable(myArray)
+    
+    
+        function buildTable(data){
+            let table = document.getElementById('myTable')
+    
+            for (let i = 0; i < data.length; i++){
+                var row = `<tr>
+                                <td>${data[i].eId}</td>
+                                <td>${data[i].eName}</td>
+                                <td>${data[i].eSal}</td>
+                                <td>${data[i].eGender}</td>
+                          </tr>`
+                table.innerHTML += row
+    
+    
+            }
+        }
+
+        let SelectAllBtn=document.getElementById('#all');
+        let MBtn=document.getElementById('#men');
+        let FBtn=document.getElementById('#women');
+
+
+        MBtn.addEventListener('click',function(){
+            let table = document.getElementById('myTable')
+    
+            for (let i = 0; i < data.length; i++){
+                if(data[i].eGender==='male'){
+                var row = `<tr>
+                                <td>${data[i].eId}</td>
+                                <td>${data[i].eName}</td>
+                                <td>${data[i].eSal}</td>
+                                <td>${data[i].eGender}</td>
+                          </tr>`
+                table.innerHTML += row
+              }
+            }
+        });
+    
+    </script>
+</body>
+</html>

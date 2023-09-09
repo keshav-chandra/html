@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Armstrong nos</title>
+</head>
+<body>
+    <script>
+        function Armstrong(){
+        let num=parseInt(prompt("enter the nos"));
+         let n=num;
+         let count=0;
+         while(num>0){
+            count++;
+            num=Math.trunc(num/10);
+         }
+         console.log("length = "+count)
+         num=n;
+         let sum=0;
+         while(num>0)
+         {
+            let d=num%10;
+            let prod=1;
+            for(let i=1;i<=count;i++){
+                prod*=d;
+            }
+            sum=sum+prod;
+            num=Math.trunc(num/10);
+        }
+            if(n==sum){
+                console.log("it is an armstrong nos")
+            }else{
+                console.log("it is not a armstrong nos")
+            }
+        
+        }Armstrong()
+    </script>
+
+</body>
+</html>

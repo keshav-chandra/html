@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Range of fibbonacci nos</title>
+</head>
+<body>
+    <script>
+        function fibbonacci(){
+         let a=parseInt(prompt("enter lower no."));
+         let b=parseInt(prompt("enter higher no."));
+         let m=0;
+         let n=0;
+         let o=0;
+         if(a==0){
+            console.log("0,1");
+         }
+         for(;;){
+            o=m+n;
+            if(o>b){
+                break;
+            }
+            if(o>=a){
+                console.log(" "+ o)
+            }
+            m=n;
+            n=o;
+         }
+        }fibbonacci()
+    </script>
+</body>
+</html>

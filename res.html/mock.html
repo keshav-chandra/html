@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BS Navbar</title>
+	<link rel="stylesheet" href="../MDB/css/bootstrap.css">
+	<link rel="stylesheet" href="../MDB/css/mdb.css">
+	<link rel="stylesheet" href="../fontawesome/fa/css/all.css">
+	<style>
+		.landing-page
+		{
+			background:rgb(229, 3, 3)  no-repeat 0px 0px scroll ;
+			background-size:cover;
+			
+			height:100vh;
+		}
+		.landing-page>.wrapper
+		{
+			background-color:rgba(0, 0, 0,0.4);
+			height:inherit;
+		}
+        #mw{
+            color: greenyellow;
+        }
+        #pn{
+            color: rgb(235, 239, 230);
+            background: greenyellow;
+        }
+        #q:hover{
+            transform: scale(1.2);
+        }
+        #w:hover{
+            transform: scale(1.2);
+        }
+        #e:hover{
+            transform: scale(1.2);
+        }
+        #r:hover{
+            transform: scale(1.2);
+        }
+       
+	</style>
+</head>
+<body>
+	<!-- Main Navbar -->
+	<nav class="navbar bg-dark navbar-dark navbar-expand-md">
+		<div class="container-fluid">
+			<a href="" class="navbar-brand" id="mw" text-color="green">Movies World</a>
+
+			<button class="navbar-toggler" data-target="#links" data-toggle="collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="links">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="" class="nav-link">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Movies</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Series</a>
+					</li>
+					<li class="nav-item">
+						<a href="" class="nav-link">Popular</a>
+					</li>
+                    <li class="nav-item">
+						<a href="" class="nav-link">Trends</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="landing-page">
+		<div class="wrapper d-flex flex-column justify-content-center align-items-center">
+			<p class="text-white" >Dolore irure reprehenderit cupidatat deserunt in laboris <br>
+                 amet elit sunt in irure et culpa elit labore anim tempor id. <br> 
+                 Ut quis sit nostrud nulla non est minim in mollit sed <br>
+                  elit. Ex quis occaecat ut nulla ut consectetur <br>
+                    adipisicing veniam dolore.</p>
+			<button id="pn">Play Now</button>
+		</div>
+	</div>
+
+
+	<!-- Modal -->
+	<div class="modal" id="log">
+		<div class="modal-dialog">
+			<div class="modal-content animated swing">
+				<div class="modal-header bg-dark">
+					<h1 class="text-white">LogIn Here</h1>
+
+					<button class="close" data-dismiss="modal">
+						<span class="fa fa-times-circle"></span>
+					</button>
+				</div>
+				
+				<div class="modal-footer bg-dark">
+					<button class="btn btn-md btn-outline-white">Submit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="container-fluid mt-5">
+        <h1>NEW RELEASES</h1>
+        <div class="row">
+            <div  id="r" class="col-md-3">
+                <img img-hover="" src="../images/wp2572000.jpg" alt="" class="img-fluid">
+            </div>
+            <div id="e" class="col-md-3">
+                <img src="../images/wp2572000.jpg" alt="" class="img-fluid">
+            </div>
+            <div id= "w" class="col-md-3">
+                <img src="../images/wp2572000.jpg" alt="" class="img-fluid">
+            </div>
+            <div id="q" class="col-md-3">
+                <img src="../images/wp2572000.jpg" alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+	
+
+</body>
+</html>

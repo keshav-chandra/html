@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function currencycalculator()
+        {
+            let a=prompt("enter the amount");
+            let twothousand=parseInt(a/2000);
+            a=a%2000;
+            let fivehundred=parseInt(a/500);
+            a=a%500;
+            let twohundred=parseInt(a/200);
+            a=a%200;
+            let onehundred=parseInt(a/100);
+            a=a%100;
+            console.log("no. of 2000 note = "+twothousand)
+            console.log("no. of 500 note = "+fivehundred)
+            console.log("no. of 200 note = "+twohundred)
+            console.log("no. of 100 note = "+onehundred)
+        }
+        currencycalculator()
+    </script>
+</body>
+</html>
